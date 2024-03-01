@@ -24,7 +24,7 @@ FROM nginx:alpine
 # Copy the build files from the previous stage
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Expose port 80
+# Expose port 8080
 EXPOSE 8080
 
 ENV PORT 8080
